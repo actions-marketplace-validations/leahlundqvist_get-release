@@ -1,9 +1,10 @@
-name: 'Get the upload URL for a release'
+name: 'Get Release Info with Tag Name'
 description: 'Get the upload URL for a release for a tag in your repository'
-author: 'GitHub'
+author: 'leahlundqvist'
 inputs:
   tag_name:
     description: 'The tag of the release you want to find'
+    required: true
 outputs:
   id:
     description: 'The ID of the release'
