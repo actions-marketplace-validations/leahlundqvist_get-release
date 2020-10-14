@@ -10,7 +10,7 @@ async function run() {
     const { owner, repo } = context.repo;
 
     // Get the tag name from the triggered action
-    const tagName = context.ref;
+    const tagName = core.getInput('tag_name') || context.ref;
 
     // This removes the 'refs/tags' portion of the string, i.e. from 'refs/tags/v1.10.15' to 'v1.10.15'
     const tag = tagName.replace("refs/tags/", "");
