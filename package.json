@@ -16,7 +16,7 @@
     "actions",
     "node"
   ],
-  "author": "GitHub",
+  "author": "leahlundqvist",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
